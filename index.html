@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name= "viewpoit" content="wideth=device-width, initial-scale=1.0" />
+        <title>มาโนด</title>
+        <link rel="stylesheet" href="./style.css" />
+        <script>
+            function setUsername(){
+            document.getElementById('profile-link').innerHTML = document.getElementById("name").value + " Profile";
+        }
+        function setProfileImage(){
+            const oriIMG = document.getElementById('original')
+            const changeimg = document.getElementById('name1').value
+            console.log(changeimg)
+            oriIMG.style.backgroundImage = "url(" + changeimg + ")"
+            console.log(oriIMG.style.backgroundImage)
+        }
+        </script>
+    </head>
+    <body>
+        <main>
+            <div class="parent" id="original">
+                <div class="noti">99+</div>
+            </div>
+            </div>
+            <a id="profile-link" href="https://www.youtube.com/watch?v=BpmWTyKt3hk">Mananatakara Profile</a>
+            <div class="row">
+                <p>set profile name</p>
+                <input id="name" type="text" />
+                <button onclick="setUsername()">อย่ากด</button>
+            </div>
+            <div class="row">
+                <p>rename profile picture</p>
+                <input id="name1" type="text" />
+                <button onclick="setProfileImage()">อย่ากด</button>
+            </div>
+            <div class="gallery">
+                <div class="image" id="extend-col"></div>
+                <div class="image"></div>
+                <div class="image"></div>
+                <div class="image"></div>
+                <div class="image" id="extend-row"></div>
+                <div class="image"></div>
+                <div class="image"></div>
+                <div class="image"></div>
+                <div class="image"></div>
+                <div class="image"></div>
+            </div>
+        </main>
+    </body>
+</html>

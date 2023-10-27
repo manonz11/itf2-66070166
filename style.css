@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    background-color: violet;
+}
+
+main {
+    width: 1024px;
+    min-height: 100vh;
+    border: 2px black;
+    margin: 0px auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.parent {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 999px;
+    background-size: cover;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_6ZgWe9a0iSiYsOOSDJfQBK_HpJ4GeoqRNl94s2BeDg&s);
+}
+
+.child {
+    background-color: blue;
+    width: 75px;
+    height: 75px;
+}
+#profile-link {
+    color: black;
+    font-size: 48px;
+    text-decoration: none;
+}
+
+#profile-link:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 16px;
+    width: 900px;
+    height: 1000px;   
+}
+
+#extend-col {
+    grid-column: span 2;
+    background-color: red;
+}
+
+#extend-row {
+    grid-row: span 2;
+    background-color: red;
+}
+
+.row {
+    display: flex;
+    flex-flow: row;
+    place-items: center;
+    gap: 10px;
+}
+
+.gallery .image:nth-child(1){
+    background-size: cover;
+    background-image: url(https://www.khaosod.co.th/wpapp/uploads/2019/02/4654654654654564654654655646456546465.jpg);
+}
+
+.gallery .image:nth-child(2) {
+    background-size: cover;
+    background-image: url(https://media.tenor.com/F2oYLdhgMC0AAAAC/%E0%B8%9E%E0%B8%B5%E0%B9%88%E0%B9%82%E0%B8%95png.gif);
+}
+
+.image:nth-child(3) {
+    background-size: cover;
+    background-image: url(https://i.redd.it/71pbxvo0rnn51.png);
+}
+.image:nth-child(4) {
+    background-size: cover;
+    background-image: url(https://media.tenor.com/3--Uztw4tmAAAAAC/ricardo-milos.gif);
+}
+.image:nth-child(5) {
+    background-size: cover;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTayQRQdXZjycign1sG4eEeTvtZ2U3YYGEgXQ&usqp=CAU);
+}
+.image:nth-child(6) {
+    background-size: cover;
+    background-image: url(https://prompthero.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWxoTkRWaE9HSTJZUzFrTURjMkxUUTFPR1V0WW1JMk5TMHhPRFpoWTJKbVl6TTFORGNHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--f9293cd7bee2048c2b0d675090deae5dac8ebe2b/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9MWm05eWJXRjBPZ2wzWldKd09oUnlaWE5wZW1WZmRHOWZiR2x0YVhSYkIya0NBQWhwQWdBSU9ncHpZWFpsY25zSk9oTnpkV0p6WVcxd2JHVmZiVzlrWlVraUIyOXVCam9HUlZRNkNuTjBjbWx3VkRvT2FXNTBaWEpzWVdObFZEb01jWFZoYkdsMGVXbGYiLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--beed8ed72637ca3712935f65de3d18ae25f2cc85/105732.jpeg);
+}
+.image:nth-child(7) {
+    background-size: cover;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNQoyAIjs6MWt481wG1_I8GY27q2eOObmn91TC9DQCh3oOZHqMTLPB3XSEBYwWvn42dCo&usqp=CAU);
+}
+.image:nth-child(8) {
+    background-size: cover;
+    background-image: url(https://i.kym-cdn.com/photos/images/newsfeed/001/443/311/70f.gif);
+}
+.image:nth-child(9) {
+    background-size: cover;
+    background-image: url(https://i1.sndcdn.com/artworks-5kQxs9HSrdt4NYjy-asJbUA-t500x500.jpg);
+}
+.image:nth-child(10) {
+    background-size: cover;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS3mtZARHrbSdzpwyacyoqr0hyoIZhUzgFKg&usqp=CAU);
+}
+.noti {
+    display: grid;
+    place-items: center;
+    position: absolute;
+    background-color: red;
+    width: 3rem;
+    border-radius: 999px;
+    height: 3rem;
+    left: 1;
+    right: 0;
+    bottom: 0;
+    font-size: large;
+    color: aliceblue;
+    font-weight: 600;
+
+}
